@@ -15,34 +15,7 @@ class DLinkedList{
 		head = null;
 	}
 	
-	public void insertFirst(int data){
-		Node newNode = new Node(data);
-		
-		newNode.next = head;
-		newNode.prev = null;
-		
-		if(head != null){
-			head.prev = newNode;
-		}
-		
-		head = newNode;
-		
-	}
 	
-	public void insertEnd(int data){
-		Node newNode = new Node(data);
-		
-		if(head == null){
-			insertFirst(data);
-			return;
-		}
-		
-		Node last = head;
-		
-		while(last.next != null){
-			last = last.next;
-		}
-		
 		newNode.next = null;
 		last.next = newNode;
 		newNode.prev = last;
