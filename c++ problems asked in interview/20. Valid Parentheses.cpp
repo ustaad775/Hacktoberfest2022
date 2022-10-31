@@ -11,9 +11,9 @@ Input: s = "()"
 Output: true
 Example 2:
 
-Input: s = "()[]{}"
+Input: s = "()[{}"
 Output: true
-Example 3:
+
 
 Input: s = "(]"
 Output: false
@@ -27,7 +27,7 @@ Input: s = "{[]}"
 Output: true
   
 Solution :
-Time Complexity : O(n) where s is the length of the string 
+Time Complexity : O(n) where s is thegth of the string 
 Space Complexity : O(n) where s is the length of the string 
 
 class Solution {
